@@ -14,7 +14,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://images.wallpapersden.com/image/wxl-naruto-uzumaki-minimalist_69745.jpg)
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.wallpapersafari.com/1/97/gom1Fs.jpg)
 
     /*background: linear-gradient(#35b3e6, #161623);
 */}
@@ -73,7 +75,7 @@ h1{
     padding: 30px;
     text-align: center;
     transform: translateY(-10px);
-    opacity: 0.5;
+    opacity: 0.8;
     justify-content: center;
     transition: 0.6s;
 }
@@ -106,37 +108,62 @@ h1{
     padding: 10px;
     font-weight: 600;
     font-size: 1.3em;
-    border-style: none;
+    background: rgba(255, 255, 255, 0.342);
+    border: none;
     border-radius: 25px;
     margin-bottom: 20px;
     color: rgb(26, 26, 26);
+    transition: ease-in;
+    transition-duration: 0.5s;
+}
+.container .card .content .password:hover{
+    background: rgba(255, 255, 255, 0.726);
+}
+.container .card .content .login:hover{
+    background: rgba(255, 255, 255, 0.726);
+}
+.container .card .content .login:focus{
+    background: rgba(255, 255, 255, 0.726);    
+}
+.container .card .content .password:focus{
+    background: rgba(255, 255, 255, 0.726);    
 }
 .container .card .content .password{
     padding: 10px;
     font-weight: 600;
     font-size: 1.3em;
     border-style: none;
+    background: rgba(255, 255, 255, 0.342);
     border-radius: 25px;
     margin-bottom: 10px;
     color: rgb(26, 26, 26);
+    transition: ease-in;
+    transition-duration: 0.5s;
 }
 .container .card .content .b{
     position: relative;
     display: inline-block;
     padding: 8px 60px;
     margin-top: 15px;
-    background: #fff;
+    background: rgb(0, 130, 153);
     color: #000;
     border-radius: 18px;
     text-decoration: none;
     font-weight: 900;
+    transition: ease;
+    transition-duration: 0.9s;
+}
+.container .card .content .b:hover{
+    background: rgb(3, 209, 245);
+    transition: ease;
+    transition-duration: 0.9s;
 }
 .container .card .content .bottom{
     position: absolute;
     bottom: -20%;
     left: 25%;
     margin-top: 15px;
-    color: rgba(9, 13, 43, 0.884);
+    color: rgba(189, 189, 189, 0.808);
     text-decoration: none;
     font-weight: 900;
 }
