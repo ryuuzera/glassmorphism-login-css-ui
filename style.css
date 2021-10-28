@@ -9,6 +9,26 @@
     
 
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(194, 194, 194);
+    opacity: 1; /* Firefox */
+    font-weight: 300;
+  }
+  ::placeholder:hover { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+    font-weight: 300;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+  }
 body{
     display: flex;
     justify-content: center;
@@ -59,14 +79,14 @@ h1{
     margin: 30px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     border-radius: 15px;
-    background: rgba(12, 9, 54, 0.438);
+    background: rgba(12, 9, 54, 0.37);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid rgba(255,255,255, 0.5);
     border-left: 1px solid rgba(255,255,255, 0.5);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(4px);
 
 
 }
@@ -75,7 +95,7 @@ h1{
     padding: 30px;
     text-align: center;
     transform: translateY(-10px);
-    opacity: 0.8;
+    opacity: 0.6;
     justify-content: center;
     transition: 0.6s;
 }
@@ -85,6 +105,7 @@ h1{
 }
 .container .card .content h1{
     margin-bottom: 15px;
+    font-weight: 300;
 }
 .container .card .content hr{
     margin: 20px 30px 30px 30px;
@@ -92,20 +113,22 @@ h1{
 .container .card .content h2{
     position: absolute;
     top: -15%;
-    left: 60px;
+    left: 70px;
     font-size: 4em;
-    color: rgba(192, 192, 192, 0.158);
+    letter-spacing: -4px;
+    color: rgba(255, 255, 255, 0.74);
     pointer-events: none;
 }
 .container .card .content h3{
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: seashell;
-    font-weight: 500;
+    font-weight: 400;
 }
 .container .card .content .login{
     padding: 10px;
+    text-align: center;
     font-weight: 600;
     font-size: 1.3em;
     background: rgba(255, 255, 255, 0.342);
@@ -115,20 +138,22 @@ h1{
     color: rgb(26, 26, 26);
     transition: ease-in;
     transition-duration: 0.5s;
+    
 }
 .container .card .content .password:hover{
     background: rgba(255, 255, 255, 0.726);
 }
 .container .card .content .login:hover{
-    background: rgba(255, 255, 255, 0.726);
+    background: rgb(255, 255, 255);
 }
 .container .card .content .login:focus{
-    background: rgba(255, 255, 255, 0.726);    
+    background: rgba(255, 255, 255);    
 }
 .container .card .content .password:focus{
-    background: rgba(255, 255, 255, 0.726);    
+    background: rgba(255, 255, 255);    
 }
 .container .card .content .password{
+    text-align: center;
     padding: 10px;
     font-weight: 600;
     font-size: 1.3em;
@@ -154,6 +179,11 @@ h1{
     transition-duration: 0.9s;
 }
 .container .card .content .b:hover{
+    background: rgb(3, 209, 245);
+    transition: ease;
+    transition-duration: 0.9s;
+}
+.container .card .content .b:focus{
     background: rgb(3, 209, 245);
     transition: ease;
     transition-duration: 0.9s;
